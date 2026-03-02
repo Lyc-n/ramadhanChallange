@@ -19,12 +19,14 @@
 
   <body class="bg-gray-100 scroll-smooth">
     <nav class="nav-glass fixed w-full z-50">
-      <div class="mx-auto px-14 py-1.5 flex items-center justify-between">
+      <div
+        class="mx-auto px-4 md:px-14 py-1.5 flex items-center justify-between"
+      >
         <a href="#" class="text-lg font-bold cinzel-italic text-emerald-900">
           Lyc.
         </a>
 
-        <div class="poppins-medium flex items-center gap-4 text-sm">
+        <div class="poppins-medium hidden sm:flex items-center gap-4 text-sm">
           <a
             href="#"
             class="px-3 py-1.5 rounded-full ease-in-out hover:text-emerald-100 transition-all active:scale-95 hover:bg-emerald-900"
@@ -55,12 +57,14 @@
       ></div>
       <div class="absolute inset-0 bg-emerald-950/85"></div>
       <div class="relative z-10 max-w-3xl px-6">
-        <h1 class="cinzel text-5xl md:text-6xl font-bold leading-tight">
+        <h1
+          class="cinzel text-4xl md:text-5xl md:text-6xl font-bold leading-tight"
+        >
           Selamat Menunaikan
           <span class="gold-text">Ibadah Puasa</span>
           Ramadhan
         </h1>
-        <p class="mt-6 text-lg text-gray-200 poppins-light">
+        <p class="mt-6 text-sm md:text-lg text-gray-200 poppins-light">
           Panduan lengkap doa-doa Ramadhan yang dapat diamalkan setiap hari
           untuk meningkatkan keberkahan ibadah.
         </p>
@@ -72,14 +76,16 @@
       </div>
     </header>
 
-    <main id="doa" class="mx-auto px-14 py-20">
-      <h2 class="cinzel font-bold text-4xl text-center text-emerald-900 mb-16">
+    <main id="doa" class="mx-auto px-4 md:px-14 py-20">
+      <h2
+        class="cinzel font-semibold md:font-bold text-2xl md:text-4xl text-center text-emerald-900 mb-16"
+      >
         Doa Pilihan Ramadhan
       </h2>
       <div class="flex flex-wrap flex-col gap-10">
-        <div class="flex">
+        <div class="flex flex-col-reverse md:flex-row flex-wrap md:gap-10">
           <div class="pl-4 py-4 pr-10 flex-2">
-            <h3 class="cinzel text-xl text-emerald-900 mb-14">
+            <h3 class="cinzel text-xl text-emerald-900 mb-4 md:mb-14">
               Doa Berbuka Puasa
             </h3>
             <p
@@ -97,22 +103,23 @@
               aku bertawakal, dan dengan rezeki-Mu aku berbuka.
             </p>
           </div>
-          <div class="luxury-card flex-2 max-h-96">
+          <div class="luxury-card flex-2 max-h-48 sm:max-h-64 md:max-h-96">
             <img
               class="h-full w-full object-cover rounded-r-3xl"
               src="https://images.unsplash.com/photo-1649090908133-871264902d02?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           </div>
         </div>
-        <div class="flex flex-wrap gap-10">
-          <div class="flex-2 luxury-card max-h-96">
+
+        <div class="flex flex-col md:flex-row flex-wrap md:gap-10">
+          <div class="flex-2 luxury-card max-h-48 sm:max-h-64 md:max-h-96">
             <img
               class="h-full w-full object-cover rounded-r-3xl"
               src="https://images.unsplash.com/photo-1645579954839-9a91874deb4d?q=80&w=1073&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           </div>
           <div class="flex-2 pr-4 py-4 pl-10">
-            <h3 class="cinzel text-xl text-emerald-900 mb-3">
+            <h3 class="cinzel text-xl text-emerald-900 mb-4 md:mb-14">
               Niat Puasa Ramadhan
             </h3>
             <p
@@ -131,9 +138,9 @@
             </p>
           </div>
         </div>
-        <div class="flex flex-wrap gap-10">
+        <div class="flex flex-col-reverse md:flex-row flex-wrap md:gap-10">
           <div class="flex-2 pl-4 py-4 pr-10">
-            <h3 class="cinzel text-xl text-emerald-900 mb-3">
+            <h3 class="cinzel text-xl text-emerald-900 mb-4 md:mb-14">
               Niat Sholat Tarawih
             </h3>
             <p
@@ -148,7 +155,7 @@
               Saya berniat sholat Tarawih dua rakaat karena Allah Ta'ala.
             </p>
           </div>
-          <div class="flex-2 luxury-card max-h-96">
+          <div class="flex-2 luxury-card max-h-48 sm:max-h-64 md:max-h-96">
             <img
               class="h-full w-full object-cover rounded-r-3xl"
               src="https://images.unsplash.com/photo-1609599006353-e629aaabfeae?q=80&w=800"

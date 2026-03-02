@@ -1,0 +1,224 @@
+body {
+  background: #f8f5ef;
+  font-family: "Poppins", sans-serif;
+  color: #1f2937;
+}
+
+/* luxury gradient */
+.gold-text {
+  background: linear-gradient(90deg, #d4af37, #f7e08c, #d4af37);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* nav glass */
+.nav-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* rounded card luxury */
+.luxury-card {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.08),
+    0 4px 10px rgba(0, 0, 0, 0.04);
+  transition: all 0.35s ease;
+}
+
+.luxury-card:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.12),
+    0 10px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* button emas */
+.btn-gold {
+  position: relative;
+  display: inline-block;
+  color: white;
+  padding: 12px 26px;
+  border-radius: 999px;
+  font-weight: 500;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* gradient awal */
+.btn-gold::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #d4af37, #f3d36b);
+  z-index: -1;
+  transition: opacity 0.4s ease;
+}
+
+/* gradient hover */
+.btn-gold::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #c9a42a, #d2b34a);
+  z-index: -2;
+}
+
+.btn-gold:hover::before {
+  opacity: 0;
+}
+
+.btn-gold:hover {
+  box-shadow:
+    #d4af37 0px 0px 8px,
+    #d4af37 0px 0px 16px;
+  transition: all 0.3s ease;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.scheherazade-new-regular {
+  font-family: "Scheherazade New", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scheherazade-new-medium {
+  font-family: "Scheherazade New", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.scheherazade-new-semibold {
+  font-family: "Scheherazade New", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.scheherazade-new-bold {
+  font-family: "Scheherazade New", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.cinzel-italic {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 700;
+}

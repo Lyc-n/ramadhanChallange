@@ -41,9 +41,7 @@ body {
   position: relative;
   display: inline-block;
   color: white;
-  padding: 12px 26px;
   border-radius: 999px;
-  font-weight: 500;
   overflow: hidden;
   z-index: 1;
 }

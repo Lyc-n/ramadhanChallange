@@ -14,7 +14,7 @@
       rel="stylesheet"
     />
     <!-- css -->
-    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./src/css/global.css" />
   </head>
 
   <body class="bg-gray-100 scroll-smooth">
@@ -50,7 +50,7 @@
       class="relative min-h-screen flex items-center justify-center text-center text-white overflow-hidden"
     >
       <div
-        class="absolute inset-0 bg-cover bg-center"
+        class="absolute inset-0 bg-cover bg-center bg-fixed"
         style="
           background-image: url(&quot;https://images.unsplash.com/photo-1616422840391-fa670d4b2ae7?q=80&w=1170&auto=format&fit=crop&quot;);
         "
@@ -69,7 +69,7 @@
           untuk meningkatkan keberkahan ibadah.
         </p>
         <div class="mt-8">
-          <a href="#doa" class="btn-gold active:scale-95">
+          <a href="#doa" class="btn-gold py-3 px-6 active:scale-95">
             Lihat Doa Ramadhan
           </a>
         </div>
@@ -165,10 +165,113 @@
       </div>
     </main>
 
+    <section
+      id="tasbih"
+      class="relative px-6 md:px-14 py-24 text-white overflow-hidden"
+    >
+      <!-- PARALLAX BACKGROUND -->
+      <div
+        class="absolute inset-0 bg-cover bg-center bg-fixed"
+        style="
+          background-image: url(&quot;https://images.unsplash.com/photo-1616422840391-fa670d4b2ae7?q=80&w=1170&auto=format&fit=crop&quot;);
+        "
+      ></div>
+
+      <!-- GREEN OVERLAY -->
+      <div class="absolute inset-0 bg-emerald-950/90"></div>
+
+      <!-- CONTENT -->
+      <div class="relative z-10">
+        <h2 class="cinzel text-3xl md:text-4xl font-semibold text-center mb-4">
+          Tasbih <span class="gold-text">Digital</span>
+        </h2>
+
+        <p class="text-center text-gray-300 poppins-light mb-16">
+          Gunakan tasbih digital ini untuk membantu menghitung dzikir harian
+          Anda
+        </p>
+
+        <div class="max-w-xl mx-auto text-center">
+          <div
+            class="bg-emerald-900/40 backdrop-blur-lg rounded-3xl p-10 shadow-lg border border-emerald-800 mb-10"
+          >
+            <p id="dzikir-preset" class="text-gray-300 text-sm mb-2">
+              Pilih Dzikir
+            </p>
+
+            <div
+              id="counter"
+              class="text-7xl md:text-8xl cinzel text-emerald-200 mb-6"
+            >
+              0
+            </div>
+
+            <div class="w-full bg-emerald-900 rounded-full h-2 mb-6">
+              <div
+                id="progress"
+                class="bg-yellow-400 h-2 rounded-full w-0"
+              ></div>
+            </div>
+
+            <div class="flex justify-center items-center gap-6">
+              <button
+                id="count-btn"
+                class="w-20 h-20 rounded-full bg-gradient-to-br from-yellow-400 to-yellow-500 text-black text-4xl shadow-lg hover:scale-105 active:scale-95 transition"
+              >
+                +
+              </button>
+
+              <button
+                id="reset-btn"
+                class="w-14 h-14 rounded-full bg-gray-700 text-xl hover:bg-gray-600 transition active:scale-95"
+              >
+                ↺
+              </button>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+            <button
+              class="preset bg-emerald-900 hover:bg-emerald-800 border border-emerald-700 rounded-xl p-5 transition"
+              data-name="33"
+              data-target="33"
+            >
+              33
+            </button>
+
+            <button
+              class="preset bg-emerald-900 hover:bg-emerald-800 border border-emerald-700 rounded-xl p-5 transition"
+              data-name="34"
+              data-target="34"
+            >
+              34
+            </button>
+
+            <button
+              class="preset bg-emerald-900 hover:bg-emerald-800 border border-emerald-700 rounded-xl p-5 transition"
+              data-name="100"
+              data-target="100"
+            >
+              100
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div
+      id="badge"
+      class="fixed bottom-6 right-6 translate-y-20 opacity-0 transition-all duration-500 bg-gradient-to-r from-yellow-400 to-yellow-500 text-black font-semibold px-6 py-3 rounded-full shadow-xl"
+    >
+      🎉 Target Dzikir Tercapai
+    </div>
+
     <footer id="tentang" class="p-6 text-center bg-gray-900 text-white">
       <p class="poppins-light text-sm">
         &copy; 2026 Ramadhan Challenge. All rights reserved.
       </p>
     </footer>
+
+    <script src="./src/js/main.js"></script>
   </body>
 </html>
